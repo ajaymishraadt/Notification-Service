@@ -11,13 +11,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder(toBuilder = true)
-public class SendNotificationDto {
-
-    private String templateId;
-    private String sender;
-    private String subject;
-    private String htmlBody;
-    private List<String> emailIds;
-
-
+public class NotificationRequestDto {
+    private List<NotificationDto> notifications;
 }
+
